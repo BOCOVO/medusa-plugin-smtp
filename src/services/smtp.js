@@ -305,7 +305,7 @@ class SmtpService extends NotificationService {
    * @param {Object} data - data to send in mail (match with template)
    * @return {Promise} result of the send operation
    */
-  async sendEmail(options) {
+  async sendEmail(options, templateName) {
     try {
       const email = new Email({
         message: {
